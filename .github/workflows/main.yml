@@ -30,9 +30,6 @@ jobs:
           if [ -f .travis-requirements.txt ]; then pip install -r .travis-requirements.txt; fi
       - name: Security Demo Build & Setup
         run: |
-          owner=${{ github.repository_owner }}
-          echo "REPO_SITE=${owner}" >> $GITHUB_ENV
+          echo "REPO_SITE=dummy" >> $GITHUB_ENV
           ./setup.sh
-      - name: Security Demo Tests
-        run: ./test-security.sh
 
