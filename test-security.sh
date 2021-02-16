@@ -3,6 +3,8 @@
 # Failed the whole script if any command failed
 set -e
 
+echo "DUMMY_VAR: $DUMMY_VAR"
+
 WORKING_DIR=$(pwd)
 
 if [ -z "${JSR308}" ] ; then

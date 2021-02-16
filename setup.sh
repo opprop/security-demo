@@ -8,6 +8,8 @@ export JSR308=$(cd $(dirname "$0")/.. && pwd)
 
 # export SHELLOPTS
 
+echo "DUMMY_VAR: $DUMMY_VAR"
+
 #default value is opprop. REPO_SITE may be set to other value for travis test purpose.
 export REPO_SITE="${REPO_SITE:-opprop}"
 
