@@ -1,8 +1,8 @@
 #!/bin/bash
 
-mydir="`dirname $0`"
+mydir="`dirname $BASH_SOURCE`"
 cfDir="${mydir}"/../checker-framework-inference
-. "${cfDir}"/scripts/downstream-runtime-env-setup.sh
+. "${cfDir}"/scripts/runtime-env-setup.sh
 
 CHECKER=security.SecurityChecker
 
