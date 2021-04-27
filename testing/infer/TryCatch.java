@@ -13,7 +13,7 @@ public class TryCatch {
 
             System.out.println("IOException in method writeFeatureVectors: " + e);
 
-            Logger.getLogger(TryCatch.class.getName()).log(Level.SEVERE, null, e);
+            //Logger.getLogger(TryCatch.class.getName()).log(Level.SEVERE, null, e);
 
             throw new RuntimeException("can't continue execution due to fatal error", e);
         }
