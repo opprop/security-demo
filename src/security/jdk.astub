@@ -27,3 +27,11 @@ public class PrintStream extends FilterOutputStream
     public void println(@TopSecret Object x);
     public void println(@TopSecret String x);
 }
+
+
+package org.junit;
+
+public class Assert {
+    public static void fail(@TopSecret String message);
+}
+
