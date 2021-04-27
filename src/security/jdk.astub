@@ -1,0 +1,29 @@
+import security.qual.TopSecret;
+
+// This stub file is a workaround the UNSAT issue cause by top exception
+// parameters. However such a workaround causes the security risk of top
+// secret becoming public, since a common way of handling exception in catch
+// block is to output it to the standard output or a log file.
+
+package java.util.logging;
+public class Logger {
+    public void log(Level level, String msg, @TopSecret Throwable thrown);
+}
+
+
+package java.lang;
+public class RuntimeException extends Exception {
+    public RuntimeException(String message, @TopSecret Throwable cause);
+    public RuntimeException(@TopSecret Throwable cause);
+}
+
+
+package java.io;
+public class PrintStream extends FilterOutputStream
+    implements Appendable, Closeable
+{
+    public void print(@TopSecret String s);
+    public void print(@TopSecret Object obj);
+    public void println(@TopSecret Object x);
+    public void println(@TopSecret String x);
+}
