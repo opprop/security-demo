@@ -57,6 +57,8 @@ sourceSets {
             srcDirs = ["src"]
             include "**/*.astub"
         }
+
+        output.resourcesDir = "build/classes/java/main"
     }
 
     test {
