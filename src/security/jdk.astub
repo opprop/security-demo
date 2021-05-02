@@ -6,12 +6,19 @@ import security.qual.TopSecret;
 // block is to output it to the standard output or a log file.
 
 package java.util.logging;
+
 public class Logger {
     public void log(Level level, String msg, @TopSecret Throwable thrown);
 }
 
 
+
 package java.lang;
+
+public class Throwable implements Serializable {
+    public String getMessage(@TopSecret Throwable this);
+    public String toString(@TopSecret Throwable this);
+}
 public class RuntimeException extends Exception {
     public RuntimeException(String message, @TopSecret Throwable cause);
     public RuntimeException(@TopSecret Throwable cause);

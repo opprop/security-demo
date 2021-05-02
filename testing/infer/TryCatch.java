@@ -1,11 +1,11 @@
 import java.io.IOException;
 import java.io.OutputStream;
-import java.util.logging.Logger;
 import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class TryCatch {
 
-	private void writeFeatureVectors(OutputStream os) {
+    private void writeFeatureVectors(OutputStream os) {
         try {
             os.write(255);
         } catch (IOException e) {
@@ -19,4 +19,3 @@ public class TryCatch {
         }
     }
 }
-
