@@ -24,8 +24,8 @@ public class SecurityChecker extends BaseInferrableChecker {
     }
 
     @Override
-    public SecurityAnnotatedTypeFactory createRealTypeFactory() {
-        return new SecurityAnnotatedTypeFactory(this);
+    public SecurityAnnotatedTypeFactory createRealTypeFactory(boolean infer) {
+        return new SecurityAnnotatedTypeFactory(this, infer);
     }
 
     @Override
