@@ -21,7 +21,7 @@ projects:
 #    clean: mvn clean
 
   imgscalr:
-    giturl: https://github.com/zcai1/imgscalr.git
+    giturl: https://github.com/opprop-benchmarks/imgscalr.git
     git-ref: 492cc8b3e53bcfe3e88fdac4c3bfcf44a0922c3d
     build: mvn compile
     clean: mvn clean
