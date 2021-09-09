@@ -1,7 +1,7 @@
 projects:
   jblas:
     giturl: https://github.com/opprop-benchmarks/jblas.git
-    build: mvn install
+    build: mvn compile
     clean: mvn clean
 
 #  exp4j:
