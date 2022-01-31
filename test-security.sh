@@ -22,13 +22,11 @@ fi
 # Running test suite
 ./gradlew test --console=plain
 
+# Running Security on working benchmarks
 CORPUSFILE="working-benchmarks.yml"
-
 if [ -n "$1" ] && [ $1 = "travis" ]; then
-    # Running Security on working benchmarks
     python3 run-security-on-corpus.py --corpus-file $CORPUSFILE --is-travis-build true
 else
-    # Running Ontology on working benchmarks
     python3 run-security-on-corpus.py --corpus-file $CORPUSFILE
 fi
 
