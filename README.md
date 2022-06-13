@@ -1,4 +1,4 @@
 # security-demo
 Demo type system with a simple security lattice.
 
-[![Build Status](https://travis-ci.com/opprop/security-demo.svg?branch=master)](https://travis-ci.com/opprop/security-demo)
+![Build Status](https://github.com/opprop/security-demo/actions/workflows/main.yml/badge.svg)
