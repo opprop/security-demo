@@ -1,6 +1,7 @@
 projects:
   jblas:
     giturl: https://github.com/opprop-benchmarks/jblas.git
+    git-ref: 9a478c07a4bbf882b0697cbd57cd54d931b82fa7
     build: mvn compile
     clean: mvn clean
 
@@ -22,7 +23,7 @@ projects:
 
   imgscalr:
     giturl: https://github.com/opprop-benchmarks/imgscalr.git
-    git-ref: 492cc8b3e53bcfe3e88fdac4c3bfcf44a0922c3d
+    git-ref: 80580292a13b4a70a9012c8b1e446c5f907db6b0
     build: mvn compile
     clean: mvn clean
 
@@ -52,7 +53,7 @@ projects:
 
   matrix-toolkits-java:
     giturl: https://github.com/hwinkler/matrix-toolkits-java.git
-    git-ref: f2594128eee45a188957c854acede3d6a511d717
+    git-ref: 3277b4d19dfeeec055ff6c8c26aaea6222d6c3ec
     build: mvn compile
     clean: mvn clean
 
