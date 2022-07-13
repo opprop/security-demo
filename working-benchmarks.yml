@@ -2,7 +2,7 @@ projects:
   jblas:
     giturl: https://github.com/opprop-benchmarks/jblas.git
     git-ref: 9a478c07a4bbf882b0697cbd57cd54d931b82fa7
-    build: mvn compile
+    build: mvn compile --no-transfer-progress
     clean: mvn clean
 
 #  exp4j:
@@ -24,19 +24,19 @@ projects:
   imgscalr:
     giturl: https://github.com/opprop-benchmarks/imgscalr.git
     git-ref: 80580292a13b4a70a9012c8b1e446c5f907db6b0
-    build: mvn compile
+    build: mvn compile --no-transfer-progress
     clean: mvn clean
 
   react:
     giturl: https://github.com/flow/react.git
     git-ref: e8f7ee5ec666d2d1783c8a16b9cbd49bc11f037c
-    build: mvn compile
+    build: mvn compile --no-transfer-progress
     clean: mvn clean
 
   FaceDetection:
     giturl: https://github.com/azeevg/FaceDetection.git
     git-ref: 1a8c91328f96e90cc2c8270d6adce9e663793bc0
-    build: mvn compile
+    build: mvn compile --no-transfer-progress
     clean: mvn clean
 
   Facer:
@@ -48,19 +48,19 @@ projects:
   jama:
     giturl: https://github.com/cstroe/jama.git
     git-ref: d6b3e3d192bb901aec5e16a084c824d8db336d74
-    build: mvn compile
+    build: mvn compile --no-transfer-progress
     clean: mvn clean
 
   matrix-toolkits-java:
-    giturl: https://github.com/hwinkler/matrix-toolkits-java.git
+    giturl: https://github.com/opprop-benchmarks/matrix-toolkits-java.git
     git-ref: 3277b4d19dfeeec055ff6c8c26aaea6222d6c3ec
-    build: mvn compile
+    build: mvn compile --no-transfer-progress
     clean: mvn clean
 
   la4j:
     giturl: https://github.com/vkostyukov/la4j.git
     git-ref: db204167aa6161cd2104ce845e62518cae451d70
-    build: mvn compile
+    build: mvn compile --no-transfer-progress
     clean: mvn clean
 
 #  jump:
