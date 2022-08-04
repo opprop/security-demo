@@ -49,8 +49,8 @@ projects:
     build: mvn compile -B
     clean: mvn clean -B
 
-  matrix-toolkits-java:
-    giturl: https://github.com/opprop-benchmarks/matrix-toolkits-java.git
+  hwinkler-matrix-toolkits-java:
+    giturl: https://github.com/opprop-benchmarks/hwinkler-matrix-toolkits-java.git
     build: mvn compile -B
     clean: mvn clean -B
 
