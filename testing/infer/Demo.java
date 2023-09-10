@@ -5,7 +5,7 @@ public class Demo {
 
   void foo(String p) {}
   void bar(@TopSecret String s) {
-    // :: fixable-error: (argument.type.incompatible)
+    // :: error: (argument.type.incompatible)
     foo(s);
   }
 }

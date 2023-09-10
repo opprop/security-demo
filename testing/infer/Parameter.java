@@ -11,9 +11,9 @@ public class Parameter {
 
   void parameter(String s1, @TopSecret String s2, @Confidential String s3, @Public String s4) {
     method1(s1);
-    // :: fixable-error: (argument.type.incompatible)
+    // :: error: (argument.type.incompatible)
     method2(s2);
-    // :: fixable-error: (argument.type.incompatible)
+    // :: error: (argument.type.incompatible)
     method3(s3);
     method4(s4);
   }
