@@ -33,3 +33,6 @@ hs_err_pid*
 annotated/
 testdata/
 working-benchmarks/
+
+# IDE files
+.idea/
