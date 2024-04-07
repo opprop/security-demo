@@ -1,13 +1,13 @@
 package security;
 
 import checkers.inference.test.CFInferenceTest;
+import org.plumelib.util.IPair;
 import security.solver.SecuritySolverEngine;
 
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 import org.checkerframework.framework.test.TestUtilities;
-import org.checkerframework.javacutil.Pair;
 import org.junit.runners.Parameterized.Parameters;
 
 public class SecurityTest extends CFInferenceTest {
@@ -28,11 +28,11 @@ public class SecurityTest extends CFInferenceTest {
     }
 
     @Override
-    public Pair<String, List<String>> getSolverNameAndOptions() {
+    public IPair<String, List<String>> getSolverNameAndOptions() {
         final String solverName = SecuritySolverEngine.class.getCanonicalName();
         List<String> solverOptions = new ArrayList<>();
         // solverOptions.add("solver=Z3");
-        return Pair.of(solverName, solverOptions);
+        return IPair.of(solverName, solverOptions);
     }
 
     @Parameters
