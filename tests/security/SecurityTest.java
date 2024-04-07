@@ -1,7 +1,7 @@
 package security;
 
 import checkers.inference.test.CFInferenceTest;
-import org.checkerframework.org.plumelib.util.IPair;
+import org.plumelib.util.IPair;
 import security.solver.SecuritySolverEngine;
 
 import java.io.File;
